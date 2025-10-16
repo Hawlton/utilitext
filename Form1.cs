@@ -11,6 +11,7 @@ namespace utilitext
         public Form1()
         {
             InitializeComponent();
+            HashTab.Controls.Add(new HasherControl() { Dock = DockStyle.Fill });
         }
 
         private void EditorLoad_Click(object sender, EventArgs e)

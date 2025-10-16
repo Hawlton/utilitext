@@ -1,4 +1,6 @@
-﻿namespace utilitext
+﻿using System.Collections;
+
+namespace utilitext
 {
     partial class Form1
     {
@@ -28,31 +30,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tabControl1 = new TabControl();
+            TabBar = new TabControl();
             tabPage1 = new TabPage();
             EditorPath = new TextBox();
             SaveAsButton = new Button();
             SaveButton = new Button();
             EditorLoad = new Button();
             EditorBox = new TextBox();
-            Hasher = new TabPage();
+            HashTab = new TabPage();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
-            tabControl1.SuspendLayout();
+            TabBar.SuspendLayout();
             tabPage1.SuspendLayout();
             SuspendLayout();
             // 
-            // tabControl1
+            // TabBar
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(Hasher);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
-            tabControl1.Location = new Point(12, 12);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(785, 533);
-            tabControl1.TabIndex = 0;
+            TabBar.Controls.Add(tabPage1);
+            TabBar.Controls.Add(HashTab);
+            TabBar.Controls.Add(tabPage2);
+            TabBar.Controls.Add(tabPage3);
+            TabBar.Location = new Point(12, 12);
+            TabBar.Name = "TabBar";
+            TabBar.SelectedIndex = 0;
+            TabBar.Size = new Size(785, 533);
+            TabBar.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -115,15 +117,15 @@
             EditorBox.Size = new Size(765, 438);
             EditorBox.TabIndex = 0;
             // 
-            // Hasher
+            // HashTab
             // 
-            Hasher.Location = new Point(4, 24);
-            Hasher.Name = "Hasher";
-            Hasher.Padding = new Padding(3);
-            Hasher.Size = new Size(777, 505);
-            Hasher.TabIndex = 1;
-            Hasher.Text = "Hasher";
-            Hasher.UseVisualStyleBackColor = true;
+            HashTab.Location = new Point(4, 24);
+            HashTab.Name = "HashTab";
+            HashTab.Padding = new Padding(3);
+            HashTab.Size = new Size(777, 505);
+            HashTab.TabIndex = 1;
+            HashTab.Text = "Hasher";
+            HashTab.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -150,10 +152,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 557);
-            Controls.Add(tabControl1);
+            Controls.Add(TabBar);
             Name = "Form1";
             Text = "Utilitext";
-            tabControl1.ResumeLayout(false);
+            TabBar.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             ResumeLayout(false);
@@ -161,13 +163,13 @@
 
         #endregion
 
-        private TabControl tabControl1;
+        private TabControl TabBar;
         private TabPage tabPage1;
         private Button SaveAsButton;
         private Button SaveButton;
         private Button EditorLoad;
         private TextBox EditorBox;
-        private TabPage Hasher;
+        private TabPage HashTab;
         private TextBox EditorPath;
         private TabPage tabPage2;
         private TabPage tabPage3;
